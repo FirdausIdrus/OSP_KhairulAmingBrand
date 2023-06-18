@@ -703,7 +703,7 @@ strong {
   BACKGROUND IMAGE SECTION        
 -----------------------------------------*/
 .section-bg-image {
-  background-image: url('../images/frederik-rosar-NDSZcCfnsbY-unsplash.jpg');
+  background-image: url('../images/sambal_1_flip.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -800,6 +800,8 @@ strong {
 .member-block-info p {
   margin-bottom: 0;
 }
+
+
 
 
 /*---------------------------------------
