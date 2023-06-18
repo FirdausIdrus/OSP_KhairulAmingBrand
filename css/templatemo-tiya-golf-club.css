@@ -872,7 +872,17 @@ strong {
 }
 
 .custom-block-info {
-  padding-top: 10px;
+  display: block;
+  padding: 10px 10px;
+}
+
+.custom-block-info input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  
 }
 
 .custom-block-image-wrap + .custom-block-info {

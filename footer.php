@@ -15,18 +15,18 @@
                         <br>
 
                         <div class="row">
-                            <h5 class="site-footer-title mb-4">Sambal Nyet HQ</h5>
+                            <h5 class="site-footer-title mb-1">Sambal Nyet HQ</h5>
 
                             <p class="d-flex me-lg-3">
                                 <span>Jalan Melati Indah, Taman Seri Delima, 123, 
                                     51200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</span>
                             </p>
-                            <h5 class="site-footer-title mb-4">Email</h5>
+                            <h5 class="site-footer-title mb-1">Email</h5>
 
                             <p class="d-flex me-lg-3">
                                 <span> sambalnyet@gmail.com</span>
                             </p>
-                            <h5 class="site-footer-title mb-4">Phone</h5>
+                            <h5 class="site-footer-title mb-1">Phone</h5>
 
                             <p class="d-flex me-lg-3">
                                 <span>+603 - 78721999</span>
@@ -92,7 +92,9 @@
                                     <a href="#" class="social-icon-link bi-tiktok"></a>
                                 </li>
                             </ul>
-                            <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                            <!--
+                            <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">Firdaus</a></p>
+                            -->
                             
                         </div>
 
