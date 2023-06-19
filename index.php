@@ -35,7 +35,7 @@
                             </h1>
                             <p2>Sambal Nyet adalah pilihan terbaik untuk pecinta makanan pedas di seluruh Malaysia. Ia adalah pesaing utama dalam dunia sambal dengan cita rasa yang benar-benar mengagumkan dan nikmat yang memukau lidah anda. Dari suku-suku tradisional hingga hidangan moden, Sambal Nyet mampu memberikan keunikan tersendiri kepada hidangan anda. </p2>
                             <div class="custom-btn-group mt-3">
-                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Our Story</a>
+                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Our Founder</a>
                             </div>
                         </div>
                 </div>
