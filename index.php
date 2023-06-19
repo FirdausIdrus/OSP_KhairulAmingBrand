@@ -109,15 +109,16 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                                 <p>Stay in the loop with all the latest updates, exclusive offers, and mouthwatering recipes by subscribing to our website. Enter your email below to become a part of our cooking community and never miss a spicy beat.</p>
 
-                                <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
+                                <form id="subs_home" action="subs_home.php" method="post" class="custom-form mt-lg-4 mt-2" role="form">
                                     <div class="input-group input-group-lg">
                                         <span class="input-group-text bi-envelope" id="basic-addon1"></span>
 
                                         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
 
-                                        <button type="submit" class="form-control">Subscribe</button>
+                                        <button type="submit" name="submit" class="form-control">Subscribe</button>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
 

@@ -18,6 +18,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
 
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
 
@@ -30,9 +31,9 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="aboutUs.php">How To Contact</a></li>
+                                    <li><a class="dropdown-item" href="aboutUs.php">Award Winning</a></li>
 
-                                    <li><a class="dropdown-item" href="aboutUs.php">Our Team</a></li>
+                                    <li><a class="dropdown-item" href="aboutUs.php">Let's Connect</a></li>
                                 </ul>
                             </li>
 
