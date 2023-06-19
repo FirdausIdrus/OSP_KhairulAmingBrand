@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -208,8 +207,7 @@
         </main>
 
         <?php include 'footer.php' ?>
-
-
+        
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
