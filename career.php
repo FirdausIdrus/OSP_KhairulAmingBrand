@@ -42,14 +42,13 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                 <div class="section-overlay"></div>
 
-                <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#3D405B" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#3D405B" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#3D405B" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#3D405B" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
-
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-12">
+                        <div class="col-lg-12 col-12 text-center">
 
-                            <h1 class="text-white mb-4 pb-2">Career.</h1>
+                            <h1 class="text-white mb-1 pb-2">Become A Part of Our Team</h1>
+                            <h4 class="text-white mb-4  span">Join our team with potential for amazing growth and success</h4>
 
                             <a href="#section_2" class="btn custom-btn smoothscroll me-3">Learn more</a>
                         </div>
@@ -60,75 +59,64 @@ https://templatemo.com/tm-587-tiya-golf-club
                 <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#ffffff" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#ffffff" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#ffffff" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
             </section>
 
-
             <section class="events-section events-detail-section section-padding" id="section_2">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-md-8 col-12 mx-auto">
-                            <h2 class="mb-lg-5 mb-4">Tiya Club's Group Tournaments</h2>
+                    <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">Build A Career With Us</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-md-8 col-12">
 
                             <div class="custom-block-image-wrap">
-                                <img src="images/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="">
+                                <img src="images/meeting.jpg" class="custom-block-image img-fluid" alt="">
                             </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-8 col-12">
 
                             <div class="custom-block-info">
-                                <h3 class="mb-3">Golf Club based in Orlando</h3>
+                                <h3 class="mb-lg-5 mb-4">Careers</h3>
 
-                                <p>Tiya Golf Club is Bootstrap v5.3.0 HTML CSS template for your golf related websites. Anyone can download, edit and use this layout for commercial purposes.</p>
+                                <p>Are you passionate about making a difference? Are you ready to take your career to new heights? Look no further! We are a dynamic and innovative company seeking talented individuals like you to join our team.</p>
 
-                            <p>Tiya is 100% free CSS template provided by TemplateMo website. Please tell your friends about our website. Thank you for visiting.</p>
+                                <p>At Khairul Aming Brand, we believe that our greatest asset is our people. We foster a collaborative and inclusive work environment that encourages creativity, growth, and continuous learning. We are committed to providing a platform for you to excel and unleash your full potential.</p>
 
-                                <div class="events-detail-info row my-5">
-                                    <div class="col-lg-12 col-12">
-                                        <h4 class="mb-3">Event Detail</h4>
-                                    </div>
+                            </div>
 
-                                    <div class="col-lg-4 col-12">
-                                        <span class="custom-block-span">Date:</span>
+                        </div>
 
-                                        <p class="mb-0">18 Mar 2048</p>
-                                    </div>
+                    </div>
+                </div>
+            </section>
 
-                                    <div class="col-lg-4 col-12 my-3 my-lg-0">
-                                        <span class="custom-block-span">Location:</span>
+            <section class="events-section events-detail-section section-bg section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
 
-                                        <p class="mb-0">Tiya Golf Club</p>
-                                    </div>
+                    <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">Be part of the story</h2>
+                        </div>
 
-                                    <div class="col-lg-4 col-12">
-                                        <span class="custom-block-span">Ticket:</span>
+                        <div class="col-lg-6 col-md-8 col-12">
 
-                                        <p class="mb-0">$150</p>
-                                    </div>
-                                </div>
+                            <div class="custom-block-info">
+                                <h3 class="mb-lg-2 mb-2">Careers</h3>
 
-                                <div class="contact-info">
-                                    <div class="contact-info-item">
-                                        <div class="contact-info-body">
-                                            <strong>London, United Kingdom</strong>
+                                <p>We are on a mission to revolutionize the industry. And we want you to be a part of this exciting journey! Join our growing team and play a pivotal role in shaping the future of industry.
+                                As a member of our team, you will have the opportunity to collaborate with industry experts, thought leaders, and passionate professionals who are driven to make a difference. We believe in fostering an environment that encourages innovation, creativity, and out-of-the-box thinking.</p>
 
-                                            <p class="mt-2 mb-1">
-                                                <a href="tel: 010-020-0340" class="contact-link">
-                                                    (020) 
-                                                    010-020-0340
-                                                </a>
-                                            </p>
-    
-                                            <p class="mb-0">
-                                                <a href="mailto:info@company.com" class="contact-link">
-                                                    info@company.com
-                                                </a>
-                                            </p>
-                                        </div>
+                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Apply Now</a>
 
-                                        <div class="contact-info-footer">
-                                            <a href="#">Directions</a>
-                                        </div>
-                                    </div>
+                            </div>
 
-                                    <img src="images/WorldMap.svg" class="img-fluid" alt="">
-                                </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-8 col-12">
+
+                            <div class="custom-block-image-wrap">
+                                <img src="images/sambal_4.png" class="custom-block-image img-fluid" alt="">
                             </div>
                         </div>
 
