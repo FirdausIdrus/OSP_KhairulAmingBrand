@@ -1,9 +1,12 @@
 <div class="comment">
   <h4><?php echo $data['name']; ?></h4>
+  <?php if (!empty($data['topic'])): ?>
+    <p><strong>Topic:</strong> <?php echo $data['topic']; ?></p>
+  <?php endif; ?>
   <p><?php echo $data['date']; ?></p>
   <p><?php echo $data['comment']; ?></p>
   <?php $reply_id = $data['id']; ?>
-  <button class="reply" onclick = "reply(<?php echo $reply_id; ?>, '<?php echo $data['name']; ?>');">Reply</button>
+  <button class="reply" onclick="reply(<?php echo $reply_id; ?>, '<?php echo $data['name']; ?>');">Reply</button>
   <?php
   unset($datas);
   $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = $reply_id");
