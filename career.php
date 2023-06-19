@@ -1,34 +1,20 @@
+
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <meta name="description" content="">
         <meta name="author" content="">
-
         <title>Khairul Aming Brand</title>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
-        
-<!--
-
-TemplateMo 587 Tiya Golf Club
-
-https://templatemo.com/tm-587-tiya-golf-club
-
--->
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet"> 
     </head>
     
     <body>
@@ -172,53 +158,49 @@ https://templatemo.com/tm-587-tiya-golf-club
             <section class="events-section events-detail-section section-padding" id="section_5">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-6 col-md-8 col-12 mx-auto">
-                                <div class="events-detail-info row my-5">
+                            <div class="events-detail-info row my-5">
                                 <h2 class="mb-lg-5 mb-2">Experience the Khairul Aming Brand Advantage</h2>
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="exampleInputFirstName" class="form-label">First Name</label>
-                                            <input type="firstname" class="form-control" id="exampleInputFirstName">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputLastName" class="form-label">Last Name</label>
-                                            <input type="lastname" class="form-control" id="exampleInputLastName">
-                                        </div>    
-                                        <div class="mb-3">
-                                            <label for="exampleInputPhone" class="form-label">Phone Number</label>
-                                            <input type="phoneNum" class="form-control" id="exampleInputPhone">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                        </div>
-                                        <select class="form-select mb-3" aria-label="Default select example">
-                                            <option selected>Available Position</option>
-                                            <option value="1">Marketing Specialist</option>
-                                            <option value="2">Production Supervisor</option>
-                                            <option value="3">Customer Experience Associate</option>
-                                        </select>
-                                        <div class="mb-3">
-                                            <label for="formFile" class="form-label">Insert Your Resume (PDF)</label>
-                                            <input class="form-control" type="file" id="formFile">
-                                        </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Would you like to accept any update news from us?</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                    </form>
-
-                                </div>
-
+                                <form action="career_phpmailer.php" enctype="multipart/form-data" method="POST">
+                                    <div class="mb-3">
+                                        <label for="exampleInputFirstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="exampleInputFirstName" name="firstname" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputLastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="exampleInputLastName" name="lastname" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPhone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="exampleInputPhone" name="phonenumber" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address *</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <select class="form-select mb-3" aria-label="Default select example" name="position" required>
+                                        <option value="" selected disabled>Select Position *</option>
+                                        <option value="Marketing Specialist">Marketing Specialist</option>
+                                        <option value="Production Supervisor">Production Supervisor</option>
+                                        <option value="Customer Experience Associate">Customer Experience Associate</option>
+                                    </select>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Insert Your Resume (PDF)</label>
+                                        <input class="form-control" type="file" id="file" name="file">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Would you like to accept any update news from us?</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+
 
 
 
