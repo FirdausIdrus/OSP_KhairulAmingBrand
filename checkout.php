@@ -145,28 +145,28 @@ if(isset($_POST['order_btn'])){
          echo "<div class='display-order'><span>your cart is empty!</span></div>";
       }
       ?>
-      <span class="grand-total"> grand total : $<?= $grand_total; ?>/- </span>
+      <span class="grand-total"> grand total : RM<?= $grand_total; ?> </span>
    </div>
 
       <div class="flex">
          <div class="inputBox">
             <span>your name</span>
-            <input type="text" placeholder="enter your name" name="name" required>
+            <input type="text" placeholder="name" name="name" required>
          </div>
          <div class="inputBox">
             <span>your number</span>
-            <input type="number" placeholder="enter your number" name="number" required>
+            <input type="number" placeholder="number" name="number" required>
          </div>
          <div class="inputBox">
             <span>your email</span>
-            <input type="email" placeholder="enter your email" name="email" required>
+            <input type="email" placeholder="email" name="email" required>
          </div>
          <div class="inputBox">
             <span>payment method</span>
             <select name="method">
-               <option value="cash on delivery" selected>cash on devlivery</option>
-               <option value="credit cart">credit cart</option>
-               <option value="paypal">paypal</option>
+               <option value="Cash On Delivery" selected>Cash On Delivery</option>
+               <option value="Credit Cart">Credit Cart</option>
+               <option value="Paypal">Paypal</option>
             </select>
          </div>
          <div class="inputBox">
@@ -179,15 +179,15 @@ if(isset($_POST['order_btn'])){
          </div>
          <div class="inputBox">
             <span>city</span>
-            <input type="text" placeholder="e.g. mumbai" name="city" required>
+            <input type="text" placeholder="e.g. Kuala Lumpur" name="city" required>
          </div>
          <div class="inputBox">
             <span>state</span>
-            <input type="text" placeholder="e.g. maharashtra" name="state" required>
+            <input type="text" placeholder="e.g. Johor" name="state" required>
          </div>
          <div class="inputBox">
             <span>country</span>
-            <input type="text" placeholder="e.g. india" name="country" required>
+            <input type="text" placeholder="e.g. Malaysia" name="country" required>
          </div>
          <div class="inputBox">
             <span>pin code</span>

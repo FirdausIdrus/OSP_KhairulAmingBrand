@@ -157,7 +157,7 @@ if(isset($_POST['add_to_cart'])){
 
                         <div class="row custom-block mb-3">
 
-                            <div class="col-lg-4 col-12 order-1 order-lg-0">
+                            <div class="col-lg-5 col-12 order-1 order-lg-0">
 
                                 <div class="custom-block-image-wrap">
                                     <a href="#section_3">
@@ -212,11 +212,11 @@ if(isset($_POST['add_to_cart'])){
                                                             <div class="box">
                                                                 <img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
                                                                 <h6><?php echo $fetch_product['name']; ?></h6>
-                                                                <div class="price h6">$<?php echo $fetch_product['price']; ?>/-</div>
+                                                                <div class="price h6">RM<?php echo $fetch_product['price']; ?>.00</div>
                                                                 <input type="hidden" class="" name="product_name" value="<?php echo $fetch_product['name']; ?>">
                                                                 <input type="hidden" class="" name="product_price" value="<?php echo $fetch_product['price']; ?>">
                                                                 <input type="hidden" class="" name="product_image" value="<?php echo $fetch_product['image']; ?>">
-                                                                <input type="submit" class="button custom-btn custom-border-btn" value="add to cart" name="add_to_cart">
+                                                                <input type="submit" class="button custom-btn custom-border-btn" value="ADD TO CART" name="add_to_cart">
                                                             </div>
                                                         </form>
 
