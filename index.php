@@ -105,7 +105,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                         <div class="col-lg-6 col-12">
                             <div class="section-bg-image-block">
-                                <h2 class="mb-lg-3">Stay Updates</h2>
+                                <h2 class="mb-lg-3">Get our updates</h2>
 
                                 <p>Stay in the loop with all the latest updates, exclusive offers, and mouthwatering recipes by subscribing to our website. Enter your email below to become a part of our cooking community and never miss a spicy beat.</p>
 

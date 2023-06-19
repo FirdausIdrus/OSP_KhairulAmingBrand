@@ -1,10 +1,12 @@
 <?php
+// Connection to phpmyadmin. Change the details depending on database schema.
 $conn = mysqli_connect("localhost", "root", "", "osp_website");
 
 $errors = []; // Initialize an array to store validation errors
 
 if (isset($_POST["submit"])) {
   $name = $_POST["name"];
+  $topic = $_POST["topic"];
   $comment = $_POST["comment"];
 
   // Validate the form fields
@@ -20,7 +22,7 @@ if (isset($_POST["submit"])) {
     $date = date('F d Y, h:i:s A');
     $reply_id = $_POST["reply_id"];
 
-    $query = "INSERT INTO forum_data VALUES('', '$name', '$comment', '$date', '$reply_id')";
+    $query = "INSERT INTO forum_data (name, topic, comment, date, reply_id) VALUES ('$name', '$topic', '$comment', '$date', '$reply_id')";
     mysqli_query($conn, $query);
 
     // Redirect the user to a different page after form submission
@@ -28,68 +30,43 @@ if (isset($_POST["submit"])) {
     exit();
   }
 }
+
+// Sort the main topics by alphabetical order or by the newest topic
+$sortOption = isset($_GET['sort']) ? $_GET['sort'] : 'newest';
+$orderBy = ($sortOption === 'alphabetical') ? 'topic' : 'date DESC';
+
+// Retrieve the main topics from the database
+$datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER BY $orderBy");
+
 ?>
+
 <html>
   <head>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      body {
-        background: #212523;
-      }
-      .container {
-        background: white;
-        width: 700px;
-        margin: 0 auto;
-        padding-top: 1px;
-        padding-bottom: 5px;
-      }
-      .comment, .reply {
-        margin-top: 5px;
-        padding: 10px;
-        border-bottom: 1px solid black;
-      }
-      .reply {
-        border: 1px solid #ccc;
-      }
-      p {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-      form {
-        margin: 10px;
-      }
-      form h3 {
-        margin-bottom: 5px;
-      }
-      form input,
-      form textarea {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-      }
-      form button.submit,
-      button {
-        background: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        width: 100%;
-      }
-      button.reply {
-        background: orange;
-      }
-      .errors {
-        color: red;
-        margin-bottom: 10px;
-      }
-    </style>
+    <meta charset="utf-8">
+    <link href="css/forum_style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Khairul Aming Brand</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+    <?php include 'navbar.php' ?>
+
+    <div class="container-fluid" id="no_padding">
+      <img src="images/forum_img_main.jpg" alt="" id="forum_img">
+      <p id="forum_img_text">Cooking Concerns Discuss and Share Your Worries!</p>
+    </div>
+
+    <div class="container" id="margin_bt_50" style="width: 50%;>
+      <p id="disc_topic">Cooking Forum</p>
       <?php
       // Display validation errors, if any
       if (!empty($errors)) {
@@ -101,18 +78,25 @@ if (isset($_POST["submit"])) {
       }
       ?>
 
+      <div class="sort-options">
+        <span>Sort by:</span>
+        <a href="forum_index.php?sort=alphabetical">Alphabetical</a>
+        <a href="forum_index.php?sort=newest">Newest</a>
+      </div>
+
       <?php
-      $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0"); // only select comment and not select reply
       foreach ($datas as $data) {
         require 'forum_comment.php';
       }
       ?>
 
       <form action="" method="post" id="commentForm">
-        <h3 id="title">Leave a Comment</h3>
+        <h3 id="title">Create New Topic</h3>
         <input type="hidden" name="reply_id" id="reply_id">
         <input type="text" name="name" id="name" placeholder="Your name">
         <span id="nameError"></span>
+        <input type="text" name="topic" id="topic" placeholder="Topic">
+        <span id="topicError"></span>
         <textarea name="comment" id="comment" placeholder="Your comment"></textarea>
         <span id="commentError"></span>
         <button class="submit" type="submit" name="submit">Submit</button>
@@ -124,23 +108,34 @@ if (isset($_POST["submit"])) {
         title = document.getElementById('title');
         title.innerHTML = "Reply to " + name;
         document.getElementById('reply_id').value = id;
+        document.getElementById('topic').style.display = "none";
+        document.getElementById('topicError').textContent = '';
       }
 
       // Validate the form fields before submitting
       document.getElementById('commentForm').addEventListener('submit', function(event) {
         var nameField = document.getElementById('name');
+        var topicField = document.getElementById('topic');
         var commentField = document.getElementById('comment');
         var nameError = document.getElementById('nameError');
+        var topicError = document.getElementById('topicError');
         var commentError = document.getElementById('commentError');
         var isValid = true;
 
         // Reset error messages
         nameError.textContent = '';
+        topicError.textContent = '';
         commentError.textContent = '';
 
         // Validate name field
         if (nameField.value.trim() === '') {
           nameError.textContent = 'Name is required';
+          isValid = false;
+        }
+
+        // Validate topic field only for main topic
+        if (topicField.style.display !== "none" && topicField.value.trim() === '') {
+          topicError.textContent = 'Topic is required';
           isValid = false;
         }
 
@@ -156,5 +151,7 @@ if (isset($_POST["submit"])) {
         }
       });
     </script>
+
+    <?php include 'footer.php' ?>
   </body>
 </html>
