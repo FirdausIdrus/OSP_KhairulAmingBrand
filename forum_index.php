@@ -37,7 +37,6 @@ $orderBy = ($sortOption === 'alphabetical') ? 'topic' : 'date DESC';
 
 // Retrieve the main topics from the database
 $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER BY $orderBy");
-
 ?>
 
 <html>
@@ -49,8 +48,6 @@ $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER 
     <meta name="author" content="">
     <title>Khairul Aming Brand</title>
     <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,8 +55,7 @@ $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER 
     <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
   </head>
   <body>
-    <?php include 'navbar.php' ?>
-
+    <?php include 'navbar.php'?>
     <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
                 <div class="section-overlay"></div>
                 <div class="container">
