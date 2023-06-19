@@ -22,8 +22,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item click-scroll" href="section_update">Updates</a></li>
-                                    <li><a class="dropdown-item click-scroll" href="section_2">About Founder</a></li>
+                                    <li><a class="dropdown-item " href="index.php">Top</a></li>
                                 </ul>
                             </li>
 
