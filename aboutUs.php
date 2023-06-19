@@ -128,30 +128,36 @@
 
                                 <div class="col-lg-4 col-12 mb-lg-5 mb-4 justify-content-center">
                                     <div class="card" style="">
+                                    <a href="https://www.instagram.com/khairulaming/">
                                     <img src="images/ig.jpg" class="card-img-top" alt="...">
+                                    </a>
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Instagram</h5>
-                                        <p class="card-text text-center">Join us on Instagram for a visual feast of tantalizing dishes, behind-the-scenes glimpses, and exclusive promotions. Follow us @KhairulAming and stay connected with our culinary journey.</p>
+                                        <p class="card-text text-center">Join us on Instagram for a visual feast of tantalizing dishes, behind-the-scenes glimpses, and exclusive promotions. Follow us <strong>@KhairulAming</strong> and stay connected with our culinary journey.</p>
                                     </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-12 mb-lg-5 mb-4 justify-content-center">
                                     <div class="card" style="">
+                                    <a href="https://www.instagram.com/khairulaming/">
                                     <img src="images/twit.jpg" class="card-img-top" alt="...">
+                                    </a>
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Twitter</h5>
-                                        <p class="card-text text-center">Stay in the loop with the latest updates, exciting announcements, and engaging conversations. Follow us @KhairulAming on Twitter for real-time interactions, culinary inspiration, and a chance to connect with fellow chili paste enthusiasts.</p>
+                                        <p class="card-text text-center">Stay in the loop with the latest updates, exciting announcements, and engaging conversations. Follow us <strong>@KhairulAming</strong> on Twitter for real-time interactions, culinary inspiration, and a chance to connect with fellow chili paste enthusiasts.</p>
                                     </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-12 mb-lg-5 mb-4 justify-content-center">
                                     <div class="card" style="">
-                                    <img src="images/tt.jpg" class="card-img-top" alt="...">
+                                    <a href="https://www.instagram.com/khairulaming/">
+                                        <img src="images/tt.jpg" class="card-img-top" alt="...">
+                                    </a>
                                     <div class="card-body">
                                         <h5 class="card-title text-center">Tik Tok</h5>
-                                        <p class="card-text text-center">Get ready for some mouthwatering content as we bring our culinary creativity to TikTok. Follow us @KhairulAming for quick and entertaining recipe videos, cooking hacks, and spicy challenges that will ignite your taste buds.</p>
+                                        <p class="card-text text-center">Get ready for some mouthwatering content as we bring our culinary creativity to TikTok. Follow us <strong>@KhairulAming</strong> for quick and entertaining recipe videos, cooking hacks, and spicy challenges that will ignite your taste buds.</p>
                                     </div>
                                     </div>
                                 </div>

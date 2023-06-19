@@ -22,13 +22,7 @@
 
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">  
         
-<!--
 
-TemplateMo 587 Tiya Golf Club
-
-https://templatemo.com/tm-587-tiya-golf-club
-
--->
     </head> 
     
     <body>
@@ -116,9 +110,9 @@ https://templatemo.com/tm-587-tiya-golf-club
                                             <div class="d-flex flex-wrap align-items-center mt-3">
                                                 <div class="col">
                                                     
-                                                    <a href="event-detail.html" class="btn custom-btn">Add To Cart</a>
+                                                    <a href="product.php" class="btn custom-btn">Add To Cart</a>
 
-                                                    <a href="event-detail.html" class="btn custom-btn">Buy Now</a>
+                                                    <a href="product.php" class="btn custom-btn">Buy Now</a>
 
                                                 </div>
 
