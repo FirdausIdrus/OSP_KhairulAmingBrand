@@ -91,7 +91,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                 </div>
             </section>
 
-            <section class="events-section events-detail-section section-bg section-padding" id="section_2">
+            <section class="events-section events-detail-section section-bg section-padding" id="section_3">
                 <div class="container">
                     <div class="row">
 
@@ -123,6 +123,62 @@ https://templatemo.com/tm-587-tiya-golf-club
                     </div>
                 </div>
             </section>
+
+            <section class="events-section events-detail-section section-bg section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-lg-5 mb-4">Open for Application</h2>
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="row">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/job_1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Marketing Specialist</h5>
+                                        <p class="card-text">Join our team as a creative Marketing Specialist responsible for developing and implementing strategic campaigns, managing social media, and promoting our brand.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="col-lg-4 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/job_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Production Supervisor</h5>
+                                    <p class="card-text">Be a detail-oriented Production Supervisor overseeing chili paste manufacturing, ensuring quality, efficiency, and leading a skilled team.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                    <div class="col-lg-4 col-12">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/job_3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Customer Experience Associate</h5>
+                                    <p class="card-text">Provide exceptional service as a Customer Experience Associate, handling inquiries, resolving issues, and creating memorable experiences for our valued customers.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                    </div>
+                            
+                </div>
+                </div>
+
+
+                </div>
+            </div>
+            </section>
+
+
+
+
         </main>
 
         <?php include 'footer.php' ?>
