@@ -140,7 +140,7 @@
 
                                 <div class="col-lg-4 col-12 mb-lg-5 mb-4 justify-content-center">
                                     <div class="card" style="">
-                                    <a href="https://www.instagram.com/khairulaming/">
+                                    <a href="https://twitter.com/khairulaming">
                                     <img src="images/twit.jpg" class="card-img-top" alt="...">
                                     </a>
                                     <div class="card-body">
@@ -152,7 +152,7 @@
 
                                 <div class="col-lg-4 col-12 mb-lg-5 mb-4 justify-content-center">
                                     <div class="card" style="">
-                                    <a href="https://www.instagram.com/khairulaming/">
+                                    <a href="https://www.tiktok.com/@khairulaming?lang=en">
                                         <img src="images/tt.jpg" class="card-img-top" alt="...">
                                     </a>
                                     <div class="card-body">

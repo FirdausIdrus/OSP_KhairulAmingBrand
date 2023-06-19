@@ -62,7 +62,9 @@ $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER 
                     <div class="row">
                         <div class="col-lg-12 col-12 text-center">
                             <h1 class="text-white mb-1 pb-2">Cooking Concerns</h1>
+                            
                             <h4 class="text-white mb-4  span">Discuss and Share Your Worries!</h4>
+
                             <a href="#margin_bt_50" class="btn custom-btn smoothscroll me-3">Create Inquiries</a>
                         </div>
                     </div>

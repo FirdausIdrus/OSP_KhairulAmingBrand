@@ -104,10 +104,10 @@
                                     <img src="images/KA_yellowshirt.png" class="member-block-image img-fluid" alt="">
                                     <ul class="social-icon">
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                            <a href="https://twitter.com/khairulaming" class="social-icon-link bi-twitter"></a>
                                         </li>
                                         <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                            <a href="https://twitter.com/khairulaming" class="social-icon-link bi-whatsapp"></a>
                                         </li>
                                     </ul>
                                 </div>
