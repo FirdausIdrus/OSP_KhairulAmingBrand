@@ -107,7 +107,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                                 <p>We are on a mission to revolutionize the industry. And we want you to be a part of this exciting journey! Join our growing team and play a pivotal role in shaping the future of industry.
                                 As a member of our team, you will have the opportunity to collaborate with industry experts, thought leaders, and passionate professionals who are driven to make a difference. We believe in fostering an environment that encourages innovation, creativity, and out-of-the-box thinking.</p>
 
-                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Apply Now</a>
+                                <a href="#section_4" class="btn custom-btn smoothscroll me-3">Position Available</a>
 
                             </div>
 
@@ -124,56 +124,100 @@ https://templatemo.com/tm-587-tiya-golf-club
                 </div>
             </section>
 
-            <section class="events-section events-detail-section section-bg section-padding" id="section_4">
-            <div class="container">
-                <div class="row">
-                    
+            <section class="events-section events-detail-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
                     <div class="col-lg-12 col-12 text-center">
-                            <h2 class="mb-lg-5 mb-4">Open for Application</h2>
+                        <h2 class="mb-lg-5 mb-4">Open for Application</h2>
                     </div>
 
-                    <div class="col-lg-4 col-12">
-                        <div class="row">
-                            <div class="card" style="width: 18rem;">
-                                <img src="images/job_1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Marketing Specialist</h5>
-                                        <p class="card-text">Join our team as a creative Marketing Specialist responsible for developing and implementing strategic campaigns, managing social media, and promoting our brand.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
+                    <div class="col-lg-4 col-12 mb-lg-5 mb-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                        <img src="images/job_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Specialist</h5>
+                            <p class="card-text">Join our team as a creative Marketing Specialist responsible for developing and implementing strategic campaigns, managing social media, and promoting our brand.</p>
+                            <a href="#section_5" class="btn btn-primary">Apply Now</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-lg-5 mb-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                        <img src="images/job_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Production Supervisor</h5>
+                            <p class="card-text">Be a detail-oriented Production Supervisor overseeing chili paste manufacturing, ensuring quality, efficiency, and leading a skilled team.</p>
+                            <a href="#section_5" class="btn btn-primary">Apply Now</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mb-lg-5 mb-4 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                        <img src="images/job_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Experience Associate</h5>
+                            <p class="card-text">Provide exceptional service as a Customer Experience Associate, handling inquiries, resolving issues, and creating memorable experiences for our valued customers.</p>
+                            <a href="#section_5" class="btn btn-primary">Apply Now</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+                </section>
+
+
+            <section class="events-section events-detail-section section-padding" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-8 col-12 mx-auto">
+                                <div class="events-detail-info row my-5">
+                                <h2 class="mb-lg-5 mb-2">Experience the Khairul Aming Brand Advantage</h2>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputFirstName" class="form-label">First Name</label>
+                                            <input type="firstname" class="form-control" id="exampleInputFirstName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputLastName" class="form-label">Last Name</label>
+                                            <input type="lastname" class="form-control" id="exampleInputLastName">
+                                        </div>    
+                                        <div class="mb-3">
+                                            <label for="exampleInputPhone" class="form-label">Phone Number</label>
+                                            <input type="phoneNum" class="form-control" id="exampleInputPhone">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        </div>
+                                        <select class="form-select mb-3" aria-label="Default select example">
+                                            <option selected>Available Position</option>
+                                            <option value="1">Marketing Specialist</option>
+                                            <option value="2">Production Supervisor</option>
+                                            <option value="3">Customer Experience Associate</option>
+                                        </select>
+                                        <div class="mb-3">
+                                            <label for="formFile" class="form-label">Insert Your Resume (PDF)</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Would you like to accept any update news from us?</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+
                                 </div>
+
                             </div>
                         </div>
 
-                    <div class="col-lg-4 col-12">
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/job_2.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Production Supervisor</h5>
-                                    <p class="card-text">Be a detail-oriented Production Supervisor overseeing chili paste manufacturing, ensuring quality, efficiency, and leading a skilled team.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    
-
-                    <div class="col-lg-4 col-12">
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/job_3.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Customer Experience Associate</h5>
-                                    <p class="card-text">Provide exceptional service as a Customer Experience Associate, handling inquiries, resolving issues, and creating memorable experiences for our valued customers.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
                     </div>
-                            
                 </div>
-                </div>
-
-
-                </div>
-            </div>
             </section>
 
 
