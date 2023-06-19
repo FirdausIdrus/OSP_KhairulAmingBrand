@@ -60,10 +60,19 @@ $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER 
   <body>
     <?php include 'navbar.php' ?>
 
-    <div class="container-fluid" id="no_padding">
-      <img src="images/forum_img_main.jpg" alt="" id="forum_img">
-      <p id="forum_img_text">Cooking Concerns Discuss and Share Your Worries!</p>
-    </div>
+    <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
+                <div class="section-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12 text-center">
+                            <h1 class="text-white mb-1 pb-2">Cooking Concerns</h1>
+                            <h4 class="text-white mb-4  span">Discuss and Share Your Worries!</h4>
+                            <a href="#margin_bt_50" class="btn custom-btn smoothscroll me-3">Create Inquiries</a>
+                        </div>
+                    </div>
+                </div>
+                <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="#ffffff" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0"></path> <path fill="#ffffff" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0"></path> <path fill="#ffffff" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z" stroke-width="0"></path><path fill="#ffffff" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z" stroke-width="0"></path></svg>
+            </section>
 
     <div class="container" id="margin_bt_50" style="width: 50%;>
       <p id="disc_topic">Cooking Forum</p>
