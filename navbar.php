@@ -52,7 +52,7 @@
 
                                     <li><a class="dropdown-item" href="event-detail.html">Recipe Sharing</a></li>
 
-                                    <li><a class="dropdown-item" href="event-detail.html">Forum</a></li>
+                                    <li><a class="dropdown-item" href="forum_index.php">Forum</a></li>
                                 </ul>
                             </li>
 
