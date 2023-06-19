@@ -1,3 +1,26 @@
+<?php
+
+$conn = mysqli_connect('localhost','root','','shop_db') or die('connection failed');
+
+if(isset($_POST['add_to_cart'])){
+
+   $product_name = $_POST['product_name'];
+   $product_price = $_POST['product_price'];
+   $product_image = $_POST['product_image'];
+   $product_quantity = 1;
+
+   $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name'");
+
+   if(mysqli_num_rows($select_cart) > 0){
+      $message[] = 'product already added to cart';
+   }else{
+      $insert_product = mysqli_query($conn, "INSERT INTO `cart`(name, price, image, quantity) VALUES('$product_name', '$product_price', '$product_image', '$product_quantity')");
+      $message[] = 'product added to cart succesfully';
+   }
+
+}
+
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -21,15 +44,91 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">  
+
+        <!-- for shopping cart font awesome cdn link  -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
         
 
     </head> 
     
     <body>
+    <?php
+        if(isset($message)){
+        foreach($message as $message){
+            echo '<div class="message"><span>'.$message.'</span> <i class="fas fa-times" onclick="this.parentElement.style.display = `none`;"></i> </div>';
+        };
+        };
+
+    ?>
 
         <main>
 
-            <?php include 'navbar.php' ?>
+        <nav class="navbar navbar-expand-lg">                
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.php">
+                        <span class="navbar-brand-text">
+                            BRAND<br>
+                            <small>Khairul Aming</small>
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Member Login</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutUs.php">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="career.php">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.php">Product</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="event-listing.html">KA Recipes</a></li>
+
+                                    <li><a class="dropdown-item" href="event-detail.html">Recipe Sharing</a></li>
+
+                                    <li><a class="dropdown-item" href="forum_index.php">Forum</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <div class="d-none d-lg-block ms-lg-3">
+                            <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Members</a>
+                        </div>
+
+                        <?php
+      
+                        $select_rows = mysqli_query($conn, "SELECT * FROM `cart`") or die('query failed');
+                        $row_count = mysqli_num_rows($select_rows);
+
+                        ?>
+
+                        <a href="cart.php" class="cart nav-link "><i class="fas fa-shopping-cart"style="padding: 0 10px;"></i><span><?php echo $row_count; ?></span> </a>
+                    </div>
+                </div>
+            </nav>
             
 
             <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
@@ -43,7 +142,7 @@
 
                             <h1 class="text-white mb-4 pb-2">Sambal Nyet by Khairul Aming.</h1>
 
-                            <a href="#section_2" class="btn custom-btn smoothscroll me-3">Product</a>
+                            <a href="#section_2" class="button custom-btn smoothscroll me-3">Product</a>
                         </div>
 
                     </div>
@@ -74,7 +173,7 @@
                                 <div class="custom-block-info mt-2 mt-lg-0">
                                     <a href="#section_3" class="events-title mb-3">Sambal Nyet Berapi by Khairul Aming Brand</a>
 
-                                    <h2>RM 13.99</h2>
+                                    <h2>RM 14.00</h2>
                                     
 
                                     <div class="d-flex flex-wrap border-top mt-4 pt-3">
@@ -99,20 +198,33 @@
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex flex-wrap align-items-center mt-2">
-                                                <span class="custom-block-span">Quantity:</span>
-
-                                                <input type="number" value="1">
-
-                                                <p class="mb-0">100 bottles available</p>
-                                            </div>
 
                                             <div class="d-flex flex-wrap align-items-center mt-3">
                                                 <div class="col">
                                                     
-                                                    <a href="product.php" class="btn custom-btn">Add To Cart</a>
+                                                    <?php
+                                                        $select_products = mysqli_query($conn, "SELECT * FROM `products`");
+                                                        if(mysqli_num_rows($select_products) > 0){
+                                                            while($fetch_product = mysqli_fetch_assoc($select_products)){
+                                                        ?>
 
-                                                    <a href="product.php" class="btn custom-btn">Buy Now</a>
+                                                        <form action="" method="post">
+                                                            <div class="box">
+                                                                <img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
+                                                                <h6><?php echo $fetch_product['name']; ?></h6>
+                                                                <div class="price h6">$<?php echo $fetch_product['price']; ?>/-</div>
+                                                                <input type="hidden" class="" name="product_name" value="<?php echo $fetch_product['name']; ?>">
+                                                                <input type="hidden" class="" name="product_price" value="<?php echo $fetch_product['price']; ?>">
+                                                                <input type="hidden" class="" name="product_image" value="<?php echo $fetch_product['image']; ?>">
+                                                                <input type="submit" class="button custom-btn custom-border-btn" value="add to cart" name="add_to_cart">
+                                                            </div>
+                                                        </form>
+
+                                                        <?php
+                                                            };
+                                                        };
+                                                        ?>
+                                                    
 
                                                 </div>
 
@@ -151,6 +263,7 @@
                     </div>
                 </div>
             </section>
+
         </main>
 
         <?php include 'footer.php' ?>
@@ -160,6 +273,8 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
         
 
     </body>

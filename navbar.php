@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">                
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <a class="navbar-brand d-flex align-items-center" href="index.php">
                         <span class="navbar-brand-text">
                             BRAND<br>
                             <small>Khairul Aming</small>
@@ -44,10 +44,12 @@
                             </li>
 
                         </ul>
-
                         <div class="d-none d-lg-block ms-lg-3">
                             <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Members</a>
                         </div>
+
+
+
                     </div>
                 </div>
             </nav>
