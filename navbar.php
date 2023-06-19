@@ -18,31 +18,17 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
 
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item " href="index.php">Top</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="aboutUs.php">Award Winning</a></li>
-
-                                    <li><a class="dropdown-item" href="aboutUs.php">Let's Connect</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutUs.php">About Us</a>
                             </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Careers</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="career.php">Apply Now</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="career.php">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.php">Product</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -54,14 +40,6 @@
                                     <li><a class="dropdown-item" href="event-detail.html">Recipe Sharing</a></li>
 
                                     <li><a class="dropdown-item" href="forum_index.php">Forum</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
-
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="product.php">Order Now</a></li>
                                 </ul>
                             </li>
 
