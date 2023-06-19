@@ -6,6 +6,9 @@ require 'PHPMailer-master/src/Exception.php';
 require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
+// Connection to phpmyadmin. Change the details depending on database schema.
+$conn = mysqli_connect("localhost", "root", "", "osp_website");
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail = new PHPMailer(true);
   
@@ -26,6 +29,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email = $_POST['email'];
         $position = $_POST['position'];
   
+        /// Prepare the INSERT statement
+        $stmt = $conn->prepare("INSERT INTO job_application (firstName, lastName, number, email, position) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $firstName, $lastName, $phoneNumber, $email, $position);
+
+        // Execute the INSERT statement
+        if ($stmt->execute()) {
+            echo "Data inserted successfully.";
+        } else {
+            echo "Error: " . $stmt->error;
+        }
+
+
+        // Insert the generated data into the database
+        $query = "INSERT INTO job_application (membership_no, password) VALUES ('$firstName', '$lastName')";
+
         // Set email subject and body
         $subject = 'Acknowledgement of Your Job Application';
         $body = "Dear Sir/Miss, thank you for your interest in joining our team at Khairul Aming Brand. We appreciate the time and effort you have invested in submitting your application.\n\n";
@@ -68,7 +86,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         document.location.href = 'career.php';
         </script> 
         ";
-        
     } 
     catch (Exception $e) {
         // Failed to send email
@@ -82,4 +99,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ";
     }
 }
+// Close the statement and connection
+$stmt->close();
+$conn->close();
+?>
 ?>
