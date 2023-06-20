@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','shop_db') or die('connection failed');
+$conn = mysqli_connect('localhost','root','','osp_website') or die('connection failed');
 
 if(isset($_POST['update_update_btn'])){
    $update_value = $_POST['update_quantity'];
