@@ -31,8 +31,7 @@ if(isset($_POST['add_to_cart'])){
         <meta name="author" content="">
 
         <title>Khairul Aming Brand</title>
-
-        <!-- CSS FILES -->                
+            
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +44,6 @@ if(isset($_POST['add_to_cart'])){
 
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">  
 
-        <!-- for shopping cart font awesome cdn link  -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -306,12 +304,11 @@ if(isset($_POST['add_to_cart'])){
 
         <?php include 'footer.php' ?>
 
-        <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/custom.js"></script>
-        <!-- custom js file link  -->
+
         <script src="js/script.js"></script>
         
 

@@ -65,8 +65,7 @@ if(isset($_POST['order_btn'])){
         <meta name="author" content="">
 
         <title>Khairul Aming Brand</title>
-
-        <!-- CSS FILES -->                
+              
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -202,7 +201,6 @@ if(isset($_POST['order_btn'])){
 
 </div>
 
-<!-- custom js file link  -->
 <script src="js/script.js"></script>
    
 </body>

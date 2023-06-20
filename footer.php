@@ -1,4 +1,3 @@
-<!--footer-->
 <footer class="site-footer">
             <div class="container">
                 <div class="row">
@@ -92,13 +91,9 @@
                                     <a href="#" class="social-icon-link bi-tiktok"></a>
                                 </li>
                             </ul>
-                            <!--
-                            <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">Firdaus</a></p>
-                            -->
                             
                         </div>
 
                 </div>
             </div>
         </footer>
-        <!--End of footer-->

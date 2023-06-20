@@ -47,7 +47,7 @@ $datas = mysqli_query($conn, "SELECT * FROM forum_data WHERE reply_id = 0 ORDER 
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Khairul Aming Brand</title>
-    <!-- CSS FILES -->
+
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">

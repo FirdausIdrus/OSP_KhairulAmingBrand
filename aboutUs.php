@@ -8,8 +8,7 @@
         <meta name="author" content="">
 
         <title>Khairul Aming Brand</title>
-
-        <!-- CSS FILES -->                
+     
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -170,8 +169,6 @@
 
         <?php include 'footer.php' ?>
 
-
-        <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
