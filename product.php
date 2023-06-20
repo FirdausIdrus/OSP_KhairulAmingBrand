@@ -104,10 +104,7 @@ if(isset($_POST['add_to_cart'])){
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community</a>
 
                                 <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="event-listing.html">KA Recipes</a></li>
-
-                                    <li><a class="dropdown-item" href="event-detail.html">Recipe Sharing</a></li>
-
+                                    <li><a class="dropdown-item" href="recipeupdate.php">KA Recipes</a></li>
                                     <li><a class="dropdown-item" href="forum_index.php">Forum</a></li>
                                 </ul>
                             </li>

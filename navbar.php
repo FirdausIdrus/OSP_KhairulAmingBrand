@@ -35,10 +35,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Community</a>
 
                     <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                        <li><a class="dropdown-item" href="event-listing.html">KA Recipes</a></li>
-
-                        <li><a class="dropdown-item" href="event-detail.html">Recipe Sharing</a></li>
-
+                        <li><a class="dropdown-item" href="recipeupdate.php">KA Recipes</a></li>
                         <li><a class="dropdown-item" href="forum_index.php">Forum</a></li>
                     </ul>
                 </li>
@@ -72,7 +69,7 @@
 
                 <div class="mb-4">
                     <label class="form-label mb-2" for="member-login-password">Password</label>
-                    <input type="text" name="password" id="member-login-password" class="form-control" placeholder="315759" required="">
+                    <input type="password" name="password" id="member-login-password" class="form-control" placeholder="315759" required="">
                 </div>
 
                 <div class="col-lg-5 col-md-7 col-8 mx-auto">
